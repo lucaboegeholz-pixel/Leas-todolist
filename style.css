@@ -105,13 +105,12 @@ li{
 }
 /* für tablets und handys*/
 @media (max-wdith: 1024px) {
-    li{
-        padding: 18px 20px;
-        margin-bottom: 12px;
-        font-size: 18px
+    input[type="text"]{
+        font-size: 18px !important;
     }
-    input[type="text"] {
+    
+    input[type="text"]:focus {
         font-size: 16px;
-        padding: 12px;
+        outline: none;
     }
 } 
