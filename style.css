@@ -1,0 +1,105 @@
+body{
+    background-color: rgb(255, 160, 207);
+}
+#taskList{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Tanker-Regular,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: rgb(0, 122, 5);
+}
+#taskInput{
+    padding-left: 15px;
+    border-radius: 20px;
+    border: solid;
+    border-color: rgb(0, 122, 5);
+    min-width: 100px;
+    max-width: 800px;
+    width: 100px;
+    transition: width 0.2s ease;
+}
+#taskInput:focus{
+    outline: 2px solid rgb(11, 111, 0);
+}
+#addBtn{
+    border-radius: 50%;
+    border: solid;
+    border-color: rgb(0, 122, 5);
+    color: white;
+    background-color: rgb(0, 122, 5);
+    font-size: 25px;
+    transition: transform 0.2s ease;
+    width: 40px;
+    height: 40px;
+}
+#addBtn:hover{
+transform: scale(1.2);
+}
+#addBtn:active{
+    transform: scale(0.98);
+}
+#firstWord{
+    color: rgb(0, 122, 5);;
+}
+#headline{
+    font-family: Boxing-Regular,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
+#InputBar{
+    position: fixed;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 15px;
+    text-align: center;
+}
+@font-face {
+    font-family: Boxing-Regular;
+    src: url(Fonts/Boxing/WEB/fonts/Boxing-Regular.woff2) format('woff2'),
+         url(fonts/Boxing/WEB/fonts/Boxing-Regular.woff) format('woff'),
+         url(fonts/Boxing/WEB/fonts/Boxing-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+    font-family: Tanker-Regular;
+    src: url(Fonts/Tanker/WEB/fonts/Tanker-Regular.woff2) format('woff2'),
+         url(fonts/Tanker/WEB/fonts/Tanker-Regular.woff) format('woff'),
+         url(fonts/Tanker/WEB/fonts/Tanker-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+.deleteBtn{
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    transform: transform 0,2s ease;
+}
+.deleteBtn:hover{
+    transform: scale(1.1);
+}
+.deleteBtn:active{
+    transform: scale(0.9);
+}
+.completed{
+    text-decoration: line-through;
+    text-decoration-thickness: 4px;
+    opacity: 0.7;
+    filter: grayscale(1);
+}
+li{
+    transition: all 0.2s ease;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+}
